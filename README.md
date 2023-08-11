@@ -9,21 +9,14 @@ A collection of handy utilities and scripts that can be used to automate various
 Located in the `github/issue_creator` directory, this utility allows you to create GitHub issues in bulk from a CSV file. It's perfect for project managers and developers who want to automate the process of adding issues to GitHub repositories.
 
 - Directory: `github/issue_creator`
-- Documentation: README
+- Documentation: [README](github/issue_creator/README.md)
 
 ### Heat Transfer
 
 The heat_transfer utility provides tools for calculating and analyzing heat transfer in various materials and conditions. Utilizing common heat transfer models such as conduction, convection, and radiation, this utility can be applied to engineering, physics, and environmental studies. Whether you're designing a thermal system, studying climate effects, or exploring material properties, the heat_transfer utility offers a flexible and efficient solution.
 
 - Directory: `./physics/thermodynamics/heat_transfer`
-- Documentation: README
-
-### Test Util
-
-idk
-
-- Directory: `./test/tester/test_util`
-- Documentation: [README](test/tester/test_util/README.md)./
+- Documentation: [README](physics/thermodynamics/heat_transfer/README.md)
 
 ## How to Use
 
