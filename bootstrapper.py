@@ -58,7 +58,7 @@ def create_readme_file(path, utility_name, description):
         file.write(content)
 
 
-def update_root_readme(directory_path, utility_name, description):
+def update_root_readme(directory_path, utility_name, description, utility_readme_path):
     readme_path = os.path.join(".", "README.md")
 
     with open(readme_path, "r") as file:
@@ -69,7 +69,7 @@ def update_root_readme(directory_path, utility_name, description):
 
     # Insert the new utility's information
     if insert_index:
-        lines.insert(insert_index, f"### {utility_name}\n\n{description}\n\n- Directory: `{directory_path}`\n- Documentation: README\n\n")
+        lines.insert(insert_index, f"### {utility_name}\n\n{description}\n\n- Directory: `{directory_path}`\n- Documentation: [README]({utility_readme_path})./\n\n")
 
     with open(readme_path, "w") as file:
         file.writelines(lines)
@@ -129,7 +129,7 @@ def main():
 
     create_readme_file(path, capitalized_utility_name, description)
 
-    update_root_readme(path, capitalized_utility_name, description)
+    update_root_readme(path, capitalized_utility_name, description, f"{category}/{subcategory}/{utility_name}/README.md")
 
     commit_message = f"Add {utility_name} utility"
     commit_changes(commit_message)

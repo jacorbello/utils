@@ -18,6 +18,13 @@ The heat_transfer utility provides tools for calculating and analyzing heat tran
 - Directory: `./physics/thermodynamics/heat_transfer`
 - Documentation: README
 
+### Test Util
+
+idk
+
+- Directory: `./test/tester/test_util`
+- Documentation: [README](test/tester/test_util/README.md)./
+
 ## How to Use
 
 Each utility in this repository comes with its own README file that provides detailed instructions on how to use it. Navigate to the specific utility's directory to find its README and any other relevant files.
